@@ -1,11 +1,42 @@
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navbar = document.querySelector('.navbar');
+    const template = document.getElementById('content-template');
 
     menuToggle.addEventListener('click', function() {
         navbar.classList.toggle('active');
     });
 
+    function loadContent(data, containerId) {
+        const container = document.getElementById(containerId);
+
+        data.forEach(item => {
+            const clone = template.content.cloneNode(true);
+
+            clone.querySelector('h3').textContent = item.title;
+            const contentDiv = clone.querySelector('.document');
+            item.document.forEach(paragraph => {
+                const p = document.createElement('p');
+                p.textContent = paragraph;
+                contentDiv.appendChild(p);
+            });
+
+            const pictureDiv = clone.querySelector('.picture');
+            item.pictures.forEach(pic => {
+                const img = document.createElement('img');
+                img.src = pic.src;
+                img.alt = pic.alt;
+                pictureDiv.appendChild(img);
+            });
+
+            container.appendChild(clone);
+        });
+    }
+
+    loadContent(models, '3d-models-content');
+    loadContent(rcCarMilestones, 'rc-car-content');
+
+    // The rest of your image enlarging and zooming functionality
     const images = document.querySelectorAll('.party .picture img');
     let enlargedImg = null;
     let isDragging = false;
