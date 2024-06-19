@@ -28,101 +28,40 @@
                 <div class="party">
                     <div class="report">
                         <h3>Purpose of This Page</h3>
-                        <p>
-                            This is my portfolio. You can see my interests and the learning progress in the following. 
-                            Just started learning 3D drawing using TinkerCAD. Planning on printing 
-                            the RC Car chassis using 3D printing. 
-                        </p>
+                        <p>This is my portfolio. You can see my interests and the learning progress in the following. Just started learning 3D drawing using TinkerCAD. Planning on printing the RC Car chassis using 3D printing.</p>
                     </div>
                 </div>
                 <div class="party">
                     <div class="report">
                         <h3>Who I Am</h3>
-                        <p>
-                            I am Daniel the Potato. Couch is my workspace and it's where I come up with great ideas.
-                            I graduated with a Bachelor in Computer Science, although I don't think this degree help me much with my life.
-                            I specialize in Web SPA (Single Page Application) using React.js. Currently working as System Administrator. 
-                        </p>
-                        <p>
-                            I am currently exploring my interests in other fields. I used to have a strong interests
-                            in Mechatronics but never really learned what it's doing. I hope I can make a RC car completely
-                            from scratch using 3D printing. 
-                        </p>
+                        <p>My name is Daniel (Tsung Ti) Lee. Graduated with a Bachelor in Computer Science. I specialize in Web SPA (Single Page Application) using React.js. Currently working as System Administrator in Atlanta, GA.</p>
+                        <p>I am currently exploring my interests in other fields. I used to have a strong interest in Mechatronics but never really learned what it's doing. I hope I can make an RC car completely from scratch using 3D printing.</p>
                     </div>
                 </div>
             </section>
             <section id="models">
                 <h2>3D Models</h2>
-                <p>Details about my 3D models.</p>
-                <div class="party">
-                    <div class="report">
-                        <h3>#1 Phone Stand</h3>
-                        <p>Inspired by: Other wireless phone charging stand</p>
-                        <p>
-                            I wanted to place my phone on the desktop that's easy to check messages, and able to 
-                            charge in the meanwhile.
-                        </p>
-
-                        <h4>Feedback after Used</h4>
-                        <p>When I took it off from the printer, I tried too hard to rip off the support material that makes the 
-                            stand (the two long stick) a little crooked. The cable locator (semicircle) was supposed to let the phone charging cable
-                            stuck in there but I didn't design it well. 
-                        </p>
-                    </div>
-                    <div class="picture">
-                        <img src="C:\Capstone\daniel-the-potato\Asset\phone_holder_scratch.jpg" alt="Phone Holder Scratch">
-                        <span>Click to Enlarge</span>
-                        <img src="C:\Capstone\daniel-the-potato\Asset\phone_holder_model.jpg" alt="Phone Holder Model">
-                    </div>
-                </div>
-                <div class="party">
-                    <div class="report">
-                        <h3>#2 Headphones Hanger</h3>
-                        <p>Inspired by: Not enough space on the desk</p>
-                        <p>I wanted to save space LOL so it won't be a mess on the desk</p>
-                        
-                        <h4>Feedback after Used</h4>
-                        <p>This Hanger is NOT flexible. It only fits the current Desk I'm using. Whenever i take the headphones off from the hanger, it'll shift away from the table. 
-                            I'll have to move it back which is a bit annoying. Will make an updated version
-                        </p>
-                    </div>
-                    <div class="picture">
-                        <img src="C:\Capstone\daniel-the-potato\Asset\headphones_hanger_scratch.jpg" alt="">
-                        <span>Click to Enlarge</span>
-                        <img src="C:\Capstone\daniel-the-potato\Asset\headphones_hanger_model.jpg" alt="">
-                        <img src="C:\Capstone\daniel-the-potato\Asset\headphones_hanger_print.jpg" alt="">
-                    </div>
-                </div>
+                <div id="3d-models-content"></div>
             </section>
             <section id="rc-car">
                 <h2>RC Car Milestone</h2>
-                <p>Quick Guide for RC Cars</p>
-                <div class="party">
-                    <div class="report">
-                        <h3>#1 Components</h3>
-                        <p>
-                            <ul>
-                                <li></li>
-                            </ul>
-                        </p>
-                    </div>
-                    <div class="picture">
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="party">
-                    <div class="report">
-                        <h3>#2 Headphones Hanger</h3>
-                        <p></p>
-                    </div>
-                    <div class="picture">
-                        <img src="" alt="">
-                    </div>
-                </div>
+                <div id="rc-car-content"></div>
             </section>
         </div>
     </div>
 
+    <template id="content-template">
+        <div class="party">
+            <div class="report">
+                <h3></h3>
+                <div class="document"></div>
+            </div>
+            <div class="picture"></div>
+        </div>
+    </template>
+
+    <script src="C:\Capstone\daniel-the-potato\3d_models.js"></script>
+    <script src="C:\Capstone\daniel-the-potato\rc_cars.js"></script>
     <script src="C:\Capstone\daniel-the-potato\Portfolio.js"></script>
 </body>
 </html>
