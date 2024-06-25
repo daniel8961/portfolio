@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     loadContent(models, '3d-models-content');
+    loadContent(html_website, 'html-website-content');
     loadContent(rcCarMilestones, 'rc-car-content');
 
     // The rest of your image enlarging and zooming functionality
