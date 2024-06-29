@@ -25,7 +25,7 @@ const models = [
         ]
     },
     {
-        title: "#1 Speaker Holder 06/03/2022",
+        title: "#1 Speaker Holder 05/03/2024",
         document: [
             "Inspired by: Fuzzy Sound When Playing",
             "This is the first 3D design I've ever made.",
