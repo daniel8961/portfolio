@@ -3,7 +3,7 @@ const navbarItems = [
     { name: 'Home', href: '#home' },
     { name: '3D Models', href: '#models' },
     { name: 'Build a Website', href: '#website' },
-    { name: 'RC Car Milestone', href: '#rc-car' }
+    { name: 'RC Car Concept', href: '#rc-car' }
 ];
 
 function createNavbar() {
