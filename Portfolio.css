@@ -170,6 +170,27 @@ h2 {
     align-self: flex-start;
 }
 
+/* Add styles for lists */
+ul, ol {
+    /* border: 2px orange solid; */
+    margin: 0 0 0 20px; /* Adjust margins as needed */
+    padding: 0;
+    list-style-position: inside; /* Ensure bullets/numbers are inside the content area */
+}
+
+ul li, ol li {
+    /* margin: 0.25rem 0; Reduce the gap between list items */
+    /* font-size: 0.9rem; Make the text smaller */
+    line-height: 1.5rem;
+    /* border: 2px orange solid; */
+    padding: 0;
+}
+
+ol li ul {
+    /* border: 2px orange solid; */
+    line-height: 1rem;
+}
+
 /* Responsive design */
 @media screen and (max-width: 768px) {
     .main-content {
