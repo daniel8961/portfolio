@@ -17,7 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const contentDiv = clone.querySelector('.document');
             item.document.forEach(paragraph => {
                 const p = document.createElement('p');
-                p.textContent = paragraph;
+                // p.textContent = paragraph;
+                p.innerHTML = paragraph.replace(/\n/g, '<br>');
                 contentDiv.appendChild(p);
             });
 
