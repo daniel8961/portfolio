@@ -1,0 +1,3 @@
+Go to goDaddy to add nameservers.
+ns37.domaincontrol.com & ns38.domaincontrol.com
+> ns1.bluehost.com & ns2.bluehost.com
