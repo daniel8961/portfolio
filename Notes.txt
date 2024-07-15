@@ -1,3 +1,27 @@
 Go to goDaddy to add nameservers.
 ns37.domaincontrol.com & ns38.domaincontrol.com
 > ns1.bluehost.com & ns2.bluehost.com
+
+Project ideas:
+1. 3-leg chair {
+    Idea (brain-storm) {
+        Why: i want to lessen the legs used in the chair, 
+        1 in front, 2 in the back. Because it'd provide more leg room to swing my legs.
+        Look: curvy legs for appealing issue
+        Material: apparent & prob acylic, or wood
+    },
+    Concept Development (3D Modeling) {
+
+    }
+}
+2. ergonomic keyboard {
+    Idea (brain-storm) {
+        Why: the traditional mouse hurt my wrists a lot so i switched to ergonomic mouse and it eased the pain.
+        The regular keyboard hurt a lot too. Based on the current ergonomic mouse design, I plan to make a 
+        keyboard that look like i'm holding the mouse on each of my hand. Left hand holds one and right hand holds the other,
+        while the two are connected together.
+        Look: 2 symmetrial ergonomic mouse
+        Material: PVC
+        
+    },
+}
