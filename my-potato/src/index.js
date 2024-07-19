@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './css/Portfolio.css';
+import './assets/styles/Portfolio.css';
+import './assets/styles/Carousel.css';
 import App from './App';
 
 ReactDOM.render(
