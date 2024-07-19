@@ -9,8 +9,8 @@ const models = [
       "This Hanger is NOT flexible. It only fits the current Desk I'm using. Whenever I take the headphones off from the hanger, it'll shift away from the table. I'll have to move it back which is a bit annoying. Will make an updated version."
     ],
     pictures: [
-      { src: `${process.env.PUBLIC_URL}/assets/headphones_hanger_model.jpg`, alt: "Headphones Hanger Model" },
-      { src: `${process.env.PUBLIC_URL}/assets/headphones_hanger_print.jpg`, alt: "Headphones Hanger Print" }
+      { src: `${process.env.PUBLIC_URL}/assets/images/headphones_hanger_model.jpg`, alt: "Headphones Hanger Model" },
+      { src: `${process.env.PUBLIC_URL}/assets/images/headphones_hanger_print.jpg`, alt: "Headphones Hanger Print" }
     ]
   },
   {
@@ -21,7 +21,7 @@ const models = [
       "When I took it off from the printer, I tried too hard to rip off the support material that makes the stand (the two long stick) a little crooked. The cable locator (semicircle) was supposed to let the phone charging cable stuck in there but I didn't design it well."
     ],
     pictures: [
-      { src: `${process.env.PUBLIC_URL}/assets/phone_holder_model.jpg`, alt: "Phone Holder Model" }
+      { src: `${process.env.PUBLIC_URL}/assets/images/phone_holder_model.jpg`, alt: "Phone Holder Model" }
     ]
   },
   {
@@ -32,7 +32,7 @@ const models = [
       "When the speaker started playing, I noticed it made a fuzzy sound. After a few attempts, I discovered the reason for the noise: the sound was coming from the bottom of the speaker, and there was no extra space between the speaker and the contact surface."
     ],
     pictures: [
-      { src: `${process.env.PUBLIC_URL}/assets/speaker_holder_model.png`, alt: "Speaker Holder Model" }
+      { src: `${process.env.PUBLIC_URL}/assets/images/speaker_holder_model.png`, alt: "Speaker Holder Model" }
     ]
   }
 ];
