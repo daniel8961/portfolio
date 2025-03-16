@@ -10,6 +10,7 @@
             color: #fff;
             font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -33,11 +34,18 @@
             opacity: 0;
             transition: opacity 0.5s ease-in-out;
         }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #aaa;
+        }
     </style>
 </head>
 <body>
 
     <div class="ticker-container" id="ticker">Loading motivation...</div>
+    
+    <div class="footer">Get the words for yourself if this is helpful: <a href="https://api-of-list-of-encouraging-words.onrender.com/" style="color: #aaa;">https://api-of-list-of-encouraging-words.onrender.com/</a></div>
 
     <script>
         const ticker = document.getElementById("ticker");
