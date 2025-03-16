@@ -3,79 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Milestone</title>
-    <!-- <link rel="stylesheet" href="/Users/daniellee/Desktop/daniel-the-potato/Portfolio.css"> -->
-    <link rel="stylesheet" href="C:\Capstone\daniel-the-potato\Portfolio.css">
+    <title>Stay Focused</title>
+    <style>
+        body {
+            background: #121212;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .ticker-container {
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            padding: 10px;
+            background: #1e1e1e;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #fff;
+            min-height: 50px;
+        }
+        .fade {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>This portfolio documents my personal growth and interests</p>
-    </header>
-    <div class="menu-toggle">☰</div>
-    <div class="main-content">
-        <div class="navbar">
-            <nav>
-                <ul>
-                    <!-- /Navbar/Navbar_items.js -->
-                </ul>
-            </nav>
-        </div>
-        <div class="content">
-            <section id="home">
-                <h2>Brief Intro</h2>
-                <div class="party">
-                    <div class="report">
-                        <h3>Purpose of This Page</h3>
-                        <p>This is my portfolio. You can see my interests and the learning progress in the following. Just started learning 3D drawing using TinkerCAD. Planning on printing the RC Car chassis using 3D printing.</p>
-                    </div>
-                </div>
-                <div class="party">
-                    <div class="report">
-                        <h3>Who I Am</h3>
-                        <p>My name is Daniel (Tsung Ti) Lee. Graduated with a Bachelor in Computer Science. I specialize in Web SPA (Single Page Application) using React.js. Currently working as System Administrator in Atlanta, GA.</p>
-                        <p>
-                            I am currently exploring my interests in other fields, with a strong passion for 3D Design. I enjoy designing practical items for daily life to improve convenience and optimize room space usage, 
-                            especially in limited areas. My self-taught journey has enabled me to create efficient designs that maximize space. I aspire to make my designs attractive and inspiring to others, 
-                            encouraging them to pursue their own creative ideas and dreams.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section id="models">
-                <h2>3D Models</h2>
-                <div id="3d-models-content"></div>
-            </section>
-            <section id="website">
-                <h2>How to Upload Your HTML Website to the Internet (No CMS)</h2>
-                <div id="html-website-content"></div>
-            </section>
-            <section id="rc-car">
-                <h2>Learn RC Car as A Beginner</h2>
-                <div id="rc-car-content"></div>
-            </section>
-        </div>
-    </div>
 
-    <template id="content-template">
-        <div class="party">
-            <div class="report">
-                <h3></h3>
-                <div class="document"></div>
-            </div>
-            <div class="picture"></div>
-        </div>
-    </template>
+    <div class="ticker-container" id="ticker">Loading motivation...</div>
 
-    <script src="C:\Capstone\daniel-the-potato\Navbar\Navbar_items.js"></script>
-    <script src="C:\Capstone\daniel-the-potato\Content\3d_models.js"></script>
-    <script src="C:\Capstone\daniel-the-potato\Content\rc_cars.js"></script>
-    <script src="C:\Capstone\daniel-the-potato\Content\html_website.js"></script>
-    <script src="C:\Capstone\daniel-the-potato\Portfolio.js"></script>
-    <!-- <script src="/Users/daniellee/Desktop/daniel-the-potato/Navbar/Navbar_items.js"></script>
-    <script src="/Users/daniellee/Desktop/daniel-the-potato/Content/3d_models.js"></script>
-    <script src="/Users/daniellee/Desktop/daniel-the-potato/Content/rc_cars.js"></script>
-    <script src="/Users/daniellee/Desktop/daniel-the-potato/Content/html_website.js"></script>
-    <script src="/Users/daniellee/Desktop/daniel-the-potato/Portfolio.js"></script> -->
+    <script>
+        const ticker = document.getElementById("ticker");
+        let messages = [];
+        let index = 0;
+
+        async function fetchMessages() {
+            try {
+                const response = await fetch("https://api-of-list-of-encouraging-words.onrender.com/all");
+                const data = await response.json();
+                messages = data.messages;
+
+                // Start the ticker once data is fetched
+                if (messages.length > 0) {
+                    ticker.textContent = messages[index];
+                    setInterval(changeMessage, 3000);
+                }
+            } catch (error) {
+                ticker.textContent = "Failed to load motivation!";
+                console.error("Error fetching messages:", error);
+            }
+        }
+
+        function changeMessage() {
+            if (messages.length === 0) return;
+
+            ticker.classList.add("fade"); 
+            setTimeout(() => {
+                index = (index + 1) % messages.length;
+                ticker.textContent = messages[index];
+                ticker.classList.remove("fade");
+            }, 500);
+        }
+
+        // Fetch messages on page load
+        fetchMessages();
+    </script>
+
 </body>
 </html>
