@@ -1,6 +1,3 @@
-from pathlib import Path
-
-readme_content = """
 # danielthepotato.com
 
 A modern and responsive personal portfolio website for Daniel Lee — a cybersecurity-focused professional with a background in software engineering. This site showcases projects, work experience, and contact info in a clean, mobile-friendly layout.
