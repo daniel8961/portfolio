@@ -1,0 +1,4 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+You reached nothing here. Hehe. Thought I would have username and password here for you huh.

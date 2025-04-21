@@ -1,16 +1,24 @@
-# Portfolio Website
+from pathlib import Path
 
-This repository contains the code for my portfolio website. Currently, the development environment is being upgraded, and this version serves as a demonstration of my foundational understanding of API development.
+readme_content = """
+# danielthepotato.com
 
-## 🚀 Live Preview
-You can view the website here: [www.danielthepotato.com](http://www.danielthepotato.com)
+A modern and responsive personal portfolio website for Daniel Lee — a cybersecurity-focused professional with a background in software engineering. This site showcases projects, work experience, and contact info in a clean, mobile-friendly layout.
 
-## 📡 API Code
-The API used in this project can be accessed at:  
-🔗 [https://api-of-list-of-encouraging-words.onrender.com/](https://api-of-list-of-encouraging-words.onrender.com/)
+## 🔍 Features
 
-## 📢 Future Updates
-A new and improved version of my portfolio website is in progress and will be launched soon. Stay tuned! 🎉
+- Hero section with intro and CTA
+- About section highlighting career journey
+- Project cards with GitHub links
+- Motivation ticker for procrastinators
+- Contact section (no form, just links)
+- Responsive design using React and inline styles
 
----
-💡 **Note:** If you'd like to contribute or explore the code, feel free to fork this repository and experiment.
+## 💻 Tech Stack
+
+- React.js
+- JavaScript (ES6+)
+- Inline styles (custom CSS-in-JS)
+- Deployed on Bluehost (can be migrated to Netlify or Vercel if needed)
+
+
